@@ -57,16 +57,16 @@ const Footer = () => {
             </h3>
             <div className="flex justify-center md:justify-end gap-4 rounded-xl">
               <a href="#" className="hover:opacity-80 transition-opacity">
-                <img src={instagram} alt="Instagram" className="h-8 w-8 object-contain rounded-lg" />
+                <img src={instagram} alt="Instagram" className="h-8 w-8 object-contain rounded-full" />
               </a>
               <a href="#" className="hover:opacity-80 transition-opacity rounded-xl">
-                <img src={facebook} alt="Facebook" className="h-8 w-8 object-contain" />
+                <img src={facebook} alt="Facebook" className="h-8 w-8 object-contain rounded-full" />
               </a>
               <a href="#" className="hover:opacity-80 transition-opacity">
-                <img src={youtube} alt="YouTube" className="h-8 w-8 object-contain" />
+                <img src={youtube} alt="YouTube" className="h-8 w-8 object-contain rounded-full" />
               </a>
               <a href="#" className="hover:opacity-80 transition-opacity">
-                <img src={twitter} alt="Twitter" className="h-8 w-8 object-contain" />
+                <img src={twitter} alt="Twitter" className="h-8 w-8 object-contain rounded-full" />
               </a>
             </div>
           </div>
