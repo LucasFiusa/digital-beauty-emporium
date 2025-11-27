@@ -4,10 +4,8 @@ import LooksSection from "@/components/LooksSection";
 import LaunchesSection from "@/components/LaunchesSection";
 import NewsSection from "@/components/NewsSection";
 import Footer from "@/components/Footer";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1">
         <Hero />
@@ -15,9 +13,7 @@ const Index = () => {
         <LaunchesSection />
         <NewsSection />
       </main>
-      <Footer />
-    </div>
-  );
+      <Footer className="bg-[#e1e1e1]" />
+    </div>;
 };
-
 export default Index;

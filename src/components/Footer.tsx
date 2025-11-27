@@ -6,16 +6,14 @@ import instagram from "@/assets/instagram.png";
 import facebook from "@/assets/facebook-passoia.png";
 import youtube from "@/assets/youtube.png";
 import twitter from "@/assets/twitter-passoia.png";
-
 const Footer = () => {
-  return (
-    <footer className="bg-footer text-footer py-12">
+  return <footer className="bg-footer text-footer py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Atendimentos */}
           <div className="text-center md:text-left">
-            <h3 className="text-lg font-bold mb-4 text-primary-foreground">Atendimentos</h3>
-            <ul className="space-y-2">
+            <h3 className="text-lg font-bold mb-4 text-secondary-foreground">Atendimentos</h3>
+            <ul className="space-y-2 text-muted-foreground">
               <li>
                 <a href="#" className="hover:text-primary-foreground transition-colors">
                   Fale Conosco
@@ -41,10 +39,10 @@ const Footer = () => {
 
           {/* Formas de Pagamento */}
           <div className="text-center">
-            <h3 className="text-lg font-bold mb-4 text-primary-foreground uppercase">
+            <h3 className="text-lg font-bold mb-4 uppercase text-secondary-foreground">
               Formas de Pagamento
             </h3>
-            <div className="flex justify-center gap-4 flex-wrap">
+            <div className="gap-4 flex-wrap flex items-start justify-center">
               <img src={mastercard} alt="Mastercard" className="h-8 object-contain" />
               <img src={visa} alt="Visa" className="h-8 object-contain" />
               <img src={pix} alt="Pix" className="h-8 object-contain" />
@@ -54,12 +52,12 @@ const Footer = () => {
 
           {/* Redes Sociais */}
           <div className="text-center md:text-right">
-            <h3 className="text-lg font-bold mb-4 text-primary-foreground uppercase">
+            <h3 className="text-lg font-bold mb-4 uppercase text-secondary-foreground">
               Siga-nos nas Redes Sociais
             </h3>
             <div className="flex justify-center md:justify-end gap-4">
               <a href="#" className="hover:opacity-80 transition-opacity">
-                <img src={instagram} alt="Instagram" className="h-8 w-8 object-contain" />
+                <img src={instagram} alt="Instagram" className="h-8 w-8 object-contain rounded-lg" />
               </a>
               <a href="#" className="hover:opacity-80 transition-opacity">
                 <img src={facebook} alt="Facebook" className="h-8 w-8 object-contain" />
@@ -74,12 +72,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-footer-text/20 text-center text-sm">
+        <div className="mt-8 pt-8 border-t border-footer-text/20 text-center text-sm text-secondary-foreground">
           <p>&copy; 2024 Passoia. Todos os direitos reservados.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
