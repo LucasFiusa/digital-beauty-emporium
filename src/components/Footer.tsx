@@ -59,7 +59,7 @@ const Footer = () => {
               <a href="#" className="hover:opacity-80 transition-opacity">
                 <img src={instagram} alt="Instagram" className="h-8 w-8 object-contain rounded-lg" />
               </a>
-              <a href="#" className="hover:opacity-80 transition-opacity">
+              <a href="#" className="hover:opacity-80 transition-opacity rounded-xl">
                 <img src={facebook} alt="Facebook" className="h-8 w-8 object-contain" />
               </a>
               <a href="#" className="hover:opacity-80 transition-opacity">
