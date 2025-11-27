@@ -62,7 +62,7 @@ const LooksSection = () => {
               <img
                 src={look.image}
                 alt={look.title}
-                className="w-full aspect-[3/4] object-cover"
+                className="w-full aspect-[3/4.4] object-cover"
               />
             </div>
           ))}
