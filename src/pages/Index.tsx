@@ -13,7 +13,7 @@ const Index = () => {
         <LaunchesSection />
         <NewsSection />
       </main>
-      <Footer className="bg-[#e1e1e1]" />
+      <Footer className="bg-[#ebebeb]" />
     </div>;
 };
 export default Index;
