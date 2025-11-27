@@ -55,7 +55,7 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4 uppercase text-secondary-foreground">
               Siga-nos nas Redes Sociais
             </h3>
-            <div className="flex justify-center md:justify-end gap-4">
+            <div className="flex justify-center md:justify-end gap-4 rounded-xl">
               <a href="#" className="hover:opacity-80 transition-opacity">
                 <img src={instagram} alt="Instagram" className="h-8 w-8 object-contain rounded-lg" />
               </a>
