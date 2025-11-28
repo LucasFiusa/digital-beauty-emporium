@@ -13,7 +13,7 @@ const Index = () => {
         <LaunchesSection />
         <NewsSection />
       </main>
-      <Footer className="bg-[#ebebeb]" />
+      <Footer className="bg-accent" />
     </div>;
 };
 export default Index;
