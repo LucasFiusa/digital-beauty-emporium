@@ -64,7 +64,7 @@ const LaunchesSection = () => {
 
           {/* 3ª Divisão - Cores e descrição */}
           <div className="flex flex-col gap-4">
-            <img src={estrelas} alt="5 estrelas" className="h-6 w-auto object-contain" />
+            <img src={estrelas} alt="5 estrelas" className="h-6 w-auto object-contain self-start" />
 
             <h3 className="text-xl font-bold text-charcoal">Matte Premium</h3>
 

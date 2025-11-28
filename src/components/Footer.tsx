@@ -6,8 +6,12 @@ import instagram from "@/assets/instagram.png";
 import facebook from "@/assets/facebook-passoia.png";
 import youtube from "@/assets/youtube.png";
 import twitter from "@/assets/twitter-passoia.png";
-const Footer = () => {
-  return <footer className="bg-footer text-footer py-12">
+interface FooterProps {
+  className?: string;
+}
+
+const Footer = ({ className }: FooterProps) => {
+  return <footer className={`bg-footer text-footer py-12 ${className || ''}`}>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Atendimentos */}
