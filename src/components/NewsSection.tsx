@@ -10,7 +10,7 @@ const NewsSection = () => {
           <img
             src={novidades}
             alt="Novidades em maquiagem"
-            className="w-full h-[30vh] object-cover rounded-lg shadow-md"
+            className="w-full h-[50vh] object-cover rounded-lg shadow-md"
           />
         </div>
       </div>
