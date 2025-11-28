@@ -11,55 +11,45 @@ import vermelhoColor from "@/assets/vermelho-color.png";
 import bordoColor from "@/assets/bordo-color.png";
 import nudeColor from "@/assets/nude-color.png";
 import estrelas from "@/assets/estrelas.png";
-
 interface ColorOption {
   id: string;
   colorImage: string;
   lipImage: string;
 }
-
-const colors: ColorOption[] = [
-  { id: "cinza", colorImage: cinzaColor, lipImage: cinzaBoca },
-  { id: "vermelho", colorImage: vermelhoColor, lipImage: vermelhoBoca },
-  { id: "bordo", colorImage: bordoColor, lipImage: bordoBoca },
-  { id: "nude", colorImage: nudeColor, lipImage: nudeBoca },
-];
-
+const colors: ColorOption[] = [{
+  id: "cinza",
+  colorImage: cinzaColor,
+  lipImage: cinzaBoca
+}, {
+  id: "vermelho",
+  colorImage: vermelhoColor,
+  lipImage: vermelhoBoca
+}, {
+  id: "bordo",
+  colorImage: bordoColor,
+  lipImage: bordoBoca
+}, {
+  id: "nude",
+  colorImage: nudeColor,
+  lipImage: nudeBoca
+}];
 const LaunchesSection = () => {
   const [selectedColor, setSelectedColor] = useState<ColorOption>(colors[0]);
-
-  return (
-    <section id="lancamentos" className="py-12 bg-gray-light">
+  return <section id="lancamentos" className="py-12 bg-gray-light">
       <div className="container mx-auto px-4">
         <h2 className="section-title">Aproveite os Lançamentos</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           {/* 1ª Divisão - Imagens empilhadas (hidden on mobile) */}
           <div className="hidden md:flex flex-col gap-4 items-center">
-            <img
-              src={aberto}
-              alt="Batom aberto"
-              className="w-40 h-auto object-contain"
-            />
-            <img
-              src={fechado}
-              alt="Batom fechado"
-              className="w-40 h-auto object-contain"
-            />
-            <img
-              src={batom}
-              alt="Batons"
-              className="w-40 h-auto object-contain"
-            />
+            <img src={aberto} alt="Batom aberto" className="w-40 h-auto object-contain rounded-xl" />
+            <img src={fechado} alt="Batom fechado" className="w-40 h-auto object-contain rounded-xl" />
+            <img src={batom} alt="Batons" className="w-40 h-auto object-contain rounded-xl" />
           </div>
 
           {/* 2ª Divisão - Imagem principal */}
           <div className="flex justify-center">
-            <img
-              src={selectedColor.lipImage}
-              alt="Modelo com batom"
-              className="w-full max-w-sm rounded-lg shadow-lg transition-opacity duration-300"
-            />
+            <img src={selectedColor.lipImage} alt="Modelo com batom" className="w-full max-w-sm rounded-lg shadow-lg transition-opacity duration-300" />
           </div>
 
           {/* 3ª Divisão - Cores e descrição */}
@@ -71,21 +61,9 @@ const LaunchesSection = () => {
             <div>
               <p className="text-muted-foreground mb-3">Cores disponíveis</p>
               <div className="flex gap-3">
-                {colors.map((color) => (
-                  <button
-                    key={color.id}
-                    onClick={() => setSelectedColor(color)}
-                    className={`color-swatch overflow-hidden ${
-                      selectedColor.id === color.id ? "active" : ""
-                    }`}
-                  >
-                    <img
-                      src={color.colorImage}
-                      alt={`Cor ${color.id}`}
-                      className="w-full h-full object-cover"
-                    />
-                  </button>
-                ))}
+                {colors.map(color => <button key={color.id} onClick={() => setSelectedColor(color)} className={`color-swatch overflow-hidden ${selectedColor.id === color.id ? "active" : ""}`}>
+                    <img src={color.colorImage} alt={`Cor ${color.id}`} className="w-full h-full object-cover" />
+                  </button>)}
               </div>
             </div>
 
@@ -98,8 +76,6 @@ const LaunchesSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default LaunchesSection;
